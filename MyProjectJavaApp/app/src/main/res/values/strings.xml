@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyProjectJavaApp</string>
+    <string name="sign_in">Sign In</string>
+    <string name="phone_number">Phone</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_in_button">SIGN IN</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or_sign_in_with">Or sign in with</string>
+</resources>
