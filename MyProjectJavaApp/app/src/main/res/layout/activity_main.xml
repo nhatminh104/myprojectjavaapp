@@ -92,7 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/no_account"
-            android:textColor="@color/hint_text_color"
+            android:textColor="@color/black"
             android:textSize="14sp" />
 
         <TextView
@@ -111,7 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/or_sign_in_with"
-        android:textColor="@color/hint_text_color"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/socialButtonsLayout_121"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
