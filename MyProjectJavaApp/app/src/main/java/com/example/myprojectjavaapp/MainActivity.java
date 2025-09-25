@@ -1,6 +1,7 @@
 package com.example.myprojectjavaapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -34,23 +35,32 @@ public class MainActivity extends AppCompatActivity {
         facebookButton_121 = findViewById(R.id.facebookButton_121);
         googleButton_121 = findViewById(R.id.googleButton_121);
 
-        signInButton_121.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String phone_121 = phoneEditText_121.getText().toString().trim();
-                String password_121 = passwordEditText_121.getText().toString().trim();
+        signInButton_121.setOnClickListener(v -> {
+            String phone_121 = phoneEditText_121.getText().toString().trim();
+            String password_121 = passwordEditText_121.getText().toString().trim();
 
-                if (phone_121.isEmpty() || password_121.isEmpty()) {
-                    Toast.makeText(MainActivity.this, "Vui lòng nhập đầy đủ thông tin!", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(MainActivity.this, "Đăng nhập với SĐT: " + phone_121, Toast.LENGTH_SHORT).show();
-                }
+            if (phone_121.isEmpty() || password_121.isEmpty()) {
+                Toast.makeText(MainActivity.this, "Vui lòng nhập đầy đủ thông tin!", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(MainActivity.this, "Đăng nhập với SĐT: " + phone_121, Toast.LENGTH_SHORT).show();
             }
         });
 
-        forgotPasswordTextView_121.setOnClickListener(v -> Toast.makeText(MainActivity.this, "Chức năng Quên mật khẩu!", Toast.LENGTH_SHORT).show());
-        signUpTextView_121.setOnClickListener(v -> Toast.makeText(MainActivity.this, "Chuyển đến màn hình Đăng ký!", Toast.LENGTH_SHORT).show());
-        facebookButton_121.setOnClickListener(v -> Toast.makeText(MainActivity.this, "Đăng nhập bằng Facebook!", Toast.LENGTH_SHORT).show());
-        googleButton_121.setOnClickListener(v -> Toast.makeText(MainActivity.this, "Đăng nhập bằng Google!", Toast.LENGTH_SHORT).show());
+        forgotPasswordTextView_121.setOnClickListener(v ->
+                Toast.makeText(MainActivity.this, "Chức năng Quên mật khẩu!", Toast.LENGTH_SHORT).show()
+        );
+
+        signUpTextView_121.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
+            startActivity(intent);
+        });
+
+        facebookButton_121.setOnClickListener(v ->
+                Toast.makeText(MainActivity.this, "Đăng nhập bằng Facebook!", Toast.LENGTH_SHORT).show()
+        );
+
+        googleButton_121.setOnClickListener(v ->
+                Toast.makeText(MainActivity.this, "Đăng nhập bằng Google!", Toast.LENGTH_SHORT).show()
+        );
     }
 }
