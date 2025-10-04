@@ -71,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Tên hiển thị (Username121)"
+            android:text="Username121"
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -151,7 +151,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:layout_marginBottom="16dp"
-                android:text="THÔNG TIN TÀI KHOẢN (CREDENTIALS)"
+                android:text="THÔNG TIN TÀI KHOẢN"
                 android:textColor="#555555"
                 android:textSize="12sp"
                 android:textStyle="bold" />
@@ -172,7 +172,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tên người dùng (Username121):"
+                        android:text="Username121:"
                         android:textColor="#AAAAAA"
                         android:textSize="12sp" />
 
@@ -194,7 +194,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mật khẩu (Password121):"
+                        android:text="Password121:"
                         android:textColor="#AAAAAA"
                         android:textSize="12sp" />
 
